@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Site Manuel Flores</title>
+  <title>My Personal Site Manuel Flores - Version 2.0</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-05LL2J4SGZ"></script>
@@ -47,7 +47,18 @@
   <section id="portfolio">
     <h2>My Credly Portfolio</h2>
     <p>View my complete portfolio of certifications and achievements on Credly.</p>
-    <p><a href="https://www.credly.com/users/itan" target="_blank">Visit my Credly Portfolio</a></p>
+    <p><a href="https://www.credly.com/users/itan" target="_blank" onclick="gtag('event', 'click_social', {'event_category': 'engagement', 'event_label': 'LinkedIn Profile Click'});">Visit my Credly Portfolio</a></p>
+  </section>
+  <section id="cv">
+    <h2>Download My CV</h2>
+    <p><a href="path/to/CV.pdf" download onclick="gtag('event', 'download_cv', {'event_category': 'engagement', 'event_label': 'CV Download'});">Download CV</a></p>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" onsubmit="gtag('event', 'submit_form', {'event_category': 'engagement', 'event_label': 'Contact Form Submission'});">
+      <!-- form fields -->
+      <button type="submit">Send</button>
+    </form>
   </section>
   <footer>
     <p>Version 2.0</p>
