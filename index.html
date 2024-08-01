@@ -5,13 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Site Manuel Flores</title>
   <link rel="stylesheet" href="styles.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05LL2J4SGZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-05LL2J4SGZ');
-  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-05LL2J4SGZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Configuración de Google Analytics
+  gtag('config', 'G-05LL2J4SGZ', {
+    'send_page_view': true,
+    'user_properties': {
+      'gender': 'male',  // Ejemplo de propiedad de usuario
+      'age': '25-34',  // Ejemplo de propiedad de usuario
+      'city': 'Mexico City',  // Ejemplo de propiedad de usuario
+      'country': 'Mexico'  // Ejemplo de propiedad de usuario
+    }
+  });
+</script>
 </head>
 <body>
   <header>
